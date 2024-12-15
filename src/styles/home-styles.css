@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6600;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.user-options {
+    display: flex;
+    gap: 15px;
+}
+
+.user-options button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #ff6600;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Banner Section */
+.main-banner {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main-banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Deals Section */
+.deals-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.deals-section h2 {
+    margin-bottom: 15px;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.deal img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.deal:hover img {
+    transform: scale(1.1);
+    /* Zoom effect for deal images */
+}
+
+.deal p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Popular Products Section */
+.products-section {
+    background-color: white;
+    padding: 20px;
+}
+
+.products-section h2 {
+    margin-bottom: 15px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    overflow: hidden;
+    /* Ensures the image stays inside the container */
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for zoom */
+}
+
+.product:hover img {
+    transform: scale(1.1);
+    /* Zoom effect for product images */
+}
+
+.product p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+}
